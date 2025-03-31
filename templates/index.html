@@ -1,0 +1,52 @@
+<!DOCTYPE html><html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IOB Bank - Home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="{{ url_for('static', filename='logo.png') }}" alt="IOB Bank Logo">
+            <h1>Indian Overseas Bank</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="{{ url_for('login') }}">Login</a></li>
+            </ul>
+        </nav>
+    </header><section class="banner">
+    <h1>Welcome to IOB Bank</h1>
+    <p>Your trusted partner for secure banking</p>
+    <a href="{{ url_for('login') }}" class="btn">Login to Your Account</a>
+</section>
+
+<section class="services">
+    <h2>Our Services</h2>
+    <div class="service-container">
+        <div class="service-box">
+            <h3>Personal Banking</h3>
+            <p>Secure and convenient banking solutions for individuals.</p>
+        </div>
+        <div class="service-box">
+            <h3>Corporate Banking</h3>
+            <p>Manage your business transactions with ease.</p>
+        </div>
+        <div class="service-box">
+            <h3>Loans & Credit</h3>
+            <p>Flexible loans and credit facilities to meet your needs.</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2025 IOB Bank. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
